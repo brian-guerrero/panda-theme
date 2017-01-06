@@ -1,0 +1,15 @@
+{
+    "name": "panda-theme",
+    "title": "Panda Theme",
+    "description": "This theme is inspired off the CodePen Panda theme!",
+    "homepage": "https://github.com/yourname/panda-theme",
+    "version": "1.0.0",
+    "author": "Brian Guerrero <13bguerrero@gmail.com> (http://brian-guerrero.github.io)",
+    "license": "MIT",
+    "theme": {
+        "file": "theme.less",
+        "dark": true,
+        "addModeClass": true
+    },
+    "keywords": ["theme"]
+}

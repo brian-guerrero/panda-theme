@@ -1,0 +1,110 @@
+/* Colors */
+@background: #292A2B;
+@foreground: #ff2c6d;
+
+@comment: #676B79;
+@error: #D9534F;
+@keyword: #FF75B5;
+
+@pink: #ff9ac1;
+@cyan: #19F9D8;
+@orange: #FFB86C;
+@white: #f3f3f3;
+@light: #E6E6E6;
+
+
+/* SWATCHES ---------------------------------------------------------------------- */
+
+.cm-builtin     {color: @white;}
+.cm-def			{color: @white;}
+.cm-header      {color: @white;}
+.cm-meta		{color: @white;}
+.cm-operator	{color: @white;}
+.cm-qualifier	{color: @white;}
+
+.cm-atom		{color: @orange;}
+.cm-link		{color: @orange;}
+.cm-number		{color: @orange;}
+.cm-string      {color: @cyan;}
+.cm-string-2    {color: @orange;}
+.cm-variable    {color: @orange;}
+.cm-variable-2  {color: @pink;}
+.cm-variable-3  {color: @pink;}
+
+.cm-bracket		{color: @foreground;}
+.cm-tag			{color: @foreground;}
+
+.cm-attribute   {color: @white;}
+.cm-property    {color: @white;}
+
+.cm-comment     {color: @comment;}
+.cm-error       {color: @error;}
+.cm-keyword     {color: @keyword;}
+
+/* MISC ---------------------------------------------------------------------- */
+
+.CodeMirror, .CodeMirror-scroll {
+    background-color: @background;
+    color: @white;
+}
+
+.CodeMirror-gutters {
+	background: @background;
+}
+
+.CodeMirror-linenumber {
+	color: @comment;
+}
+
+.CodeMirror-cursor {
+    border-left-color: white !important;
+}
+
+.CodeMirror-selected {
+    background: rgba(255,255,255,0.05) !important;
+}
+
+/* Active Line */
+.CodeMirror-activeline-background {
+	background: @background !important;
+}
+
+.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+	color: rgba(255,255,255,0.1);
+	background-color: transparent !important;
+}
+
+/* Matching Brackets and Tags */
+
+.CodeMirror-matchingbracket {
+    background: @cyan !important;
+    color: @foreground !important;
+}
+
+.CodeMirror-matchingtag {
+    background: @background !important;
+    border-bottom: 1px solid rgba(255,255,255,0.3)
+}
+
+/* Search Match */
+
+
+.CodeMirror-searching {
+    background: black !important;
+    outline: 2px solid rgba(255,255,255,0.25);
+}
+
+.CodeMirror-searching.searching-current-match {
+    background-color: black !important;
+}
+
+/* Non-editor styling */
+
+#image-holder,
+#not-editor {
+    background-color: @background;
+}
+
+#image-holder {
+    color: @light;
+}
