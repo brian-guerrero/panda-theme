@@ -12,6 +12,6 @@ Installation
 5. Click "Install"
 
 ## Screenshot
-(https://github.com/brian-guerrero/panda-theme/blob/master/screenshot/Screen.PNG)
+![Screenshot](https://github.com/brian-guerrero/panda-theme/blob/master/screenshot/Screen.PNG)
 
 
