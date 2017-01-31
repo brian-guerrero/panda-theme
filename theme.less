@@ -6,40 +6,57 @@
 @error: #D9534F;
 @keyword: #FF75B5;
 
-@pink: #ff9ac1;
-@cyan: #19F9D8;
-@orange: #FFB86C;
+/* Colors */
+@background: #292A2B;
+@foreground: #ff2c6d;
+
+@comment: #676B79;
+@error: #FF2C6D;
+@keyword: #FF75B5;
+
 @white: #f3f3f3;
 @light: #E6E6E6;
 
+@blue                  : #45A9F9;
+@light-blue            : #6FC1FF;
+@purple                : #B084EB;
+@green                 : #19f9d8;
+@red                   : #FF2C6D;
+
+@orange                : #FFB86C;
+@light-orange          : lighten(@orange, 8%);
+
+@pink                  : #FF75B5;
+@light-pink            : #FF9AC1;
+
 
 /* SWATCHES ---------------------------------------------------------------------- */
+.cm-builtin     { color: @blue; }
+.cm-def			{ color: @purple; }
+.cm-header      { color: @light; }
+.cm-meta		{ color: @light; }
+.cm-operator	{ color: @light-orange; }
+.cm-qualifier	{ color: @orange; }
 
-.cm-builtin     {color: @white;}
-.cm-def			{color: @white;}
-.cm-header      {color: @white;}
-.cm-meta		{color: @white;}
-.cm-operator	{color: @white;}
-.cm-qualifier	{color: @white;}
+.cm-atom		{ color: @orange; }
+.cm-link		{ color: @orange; }
+.cm-number		{ color: @orange; }
+.cm-string      { color: @green; }
+.cm-string-2    { color: @orange; }
 
-.cm-atom		{color: @orange;}
-.cm-link		{color: @orange;}
-.cm-number		{color: @orange;}
-.cm-string      {color: @cyan;}
-.cm-string-2    {color: @orange;}
-.cm-variable    {color: @orange;}
-.cm-variable-2  {color: @pink;}
-.cm-variable-3  {color: @pink;}
+.cm-variable    { color: @orange; }
+.cm-variable-2  { color: @pink; }
+.cm-variable-3  { color: @light-pink; }
 
-.cm-bracket		{color: @foreground;}
-.cm-tag			{color: @foreground;}
+.cm-bracket		{ color: @light-orange; }
+.cm-tag			{ color: @red; }
 
-.cm-attribute   {color: @white;}
-.cm-property    {color: @white;}
+.cm-attribute   { color: @orange; }
+.cm-property    { color: @light; }
 
-.cm-comment     {color: @comment;}
-.cm-error       {color: @error;}
-.cm-keyword     {color: @keyword;}
+.cm-comment     { color: @comment; }
+.cm-error       { color: @red; }
+.cm-keyword     { color: @pink; }
 
 /* MISC ---------------------------------------------------------------------- */
 
@@ -61,7 +78,7 @@
 }
 
 .CodeMirror-selected {
-    background: rgba(255,255,255,0.05) !important;
+    background: rgba(99, 123, 156, 0.12) !important;
 }
 
 /* Active Line */
@@ -70,32 +87,37 @@
 }
 
 .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
-	color: rgba(255,255,255,0.1);
+	color: rgba(99, 123, 156, 0.12);
 	background-color: transparent !important;
 }
 
 /* Matching Brackets and Tags */
-
 .CodeMirror-matchingbracket {
-    background: @cyan !important;
-    color: @foreground !important;
+	color: @light !important;
+	background: transparent !important;
+	border-bottom: 1px dashed @green !important;
 }
 
 .CodeMirror-matchingtag {
-    background: @background !important;
-    border-bottom: 1px solid rgba(255,255,255,0.3)
+	color: @light;
+	background: transparent !important;
+    border-bottom: 1px dashed @background !important;
 }
 
 /* Search Match */
-
-
 .CodeMirror-searching {
-    background: black !important;
-    outline: 2px solid rgba(255,255,255,0.25);
+    background: rgba(99, 123, 156, 0.1) !important;
+    outline: 1px solid rgba(255,255,255,0.5);
 }
 
 .CodeMirror-searching.searching-current-match {
-    background-color: black !important;
+    background-color: @light-orange !important;
+}
+.CodeMirror-searching.searching-last {
+	color: @light !important;
+}
+.CodeMirror-searching.searching-first {
+	color: @light !important;
 }
 
 /* Non-editor styling */
