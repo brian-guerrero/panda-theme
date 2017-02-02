@@ -3,14 +3,6 @@
 @foreground: #ff2c6d;
 
 @comment: #676B79;
-@error: #D9534F;
-@keyword: #FF75B5;
-
-/* Colors */
-@background: #292A2B;
-@foreground: #ff2c6d;
-
-@comment: #676B79;
 @error: #FF2C6D;
 @keyword: #FF75B5;
 
@@ -78,7 +70,7 @@
 }
 
 .CodeMirror-selected {
-    background: rgba(99, 123, 156, 0.12) !important;
+    background: rgba(99, 123, 156, 0.25) !important;
 }
 
 /* Active Line */
@@ -99,9 +91,8 @@
 }
 
 .CodeMirror-matchingtag {
-	color: @light;
 	background: transparent !important;
-    border-bottom: 1px dashed @background !important;
+	border-bottom: 1px solid @comment !important;
 }
 
 /* Search Match */
